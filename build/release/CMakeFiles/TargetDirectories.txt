@@ -1,0 +1,6 @@
+/home/adminlocal/PhD/cpp/spred/build/release/CMakeFiles/rebuild_cache.dir
+/home/adminlocal/PhD/cpp/spred/build/release/CMakeFiles/edit_cache.dir
+/home/adminlocal/PhD/cpp/spred/build/release/CMakeFiles/CGAL_Qt5_moc_and_resources.dir
+/home/adminlocal/PhD/cpp/spred/build/release/CMakeFiles/Urban_simplification.dir
+/home/adminlocal/PhD/cpp/spred/build/release/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir
+/home/adminlocal/PhD/cpp/spred/build/release/CMakeFiles/Urban_simplification_autogen.dir

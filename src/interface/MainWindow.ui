@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>736</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Urban simplification</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+    <item>
+     <layout class="QHBoxLayout">
+      <item>
+       <widget class="Buffered_viewer" name="viewer" native="true"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>736</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionLoad_New_File"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionLoad_segmentation"/>
+    <addaction name="actionSave_segmentation"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuRender">
+    <property name="title">
+     <string>Render</string>
+    </property>
+    <addaction name="actionVertices"/>
+    <addaction name="actionEdges"/>
+    <addaction name="actionTriangles"/>
+    <addaction name="actionPlanar_primitives"/>
+    <addaction name="actionLight"/>
+    <addaction name="actionMore"/>
+   </widget>
+   <widget class="QMenu" name="menuDetection">
+    <property name="title">
+     <string>Detection</string>
+    </property>
+    <addaction name="actionPlanes"/>
+    <addaction name="actionPrimitives_expansion"/>
+    <addaction name="actionGraph_detection"/>
+    <addaction name="actionPromptPrimitives"/>
+    <addaction name="actionPrompt_detection_params"/>
+    <addaction name="separator"/>
+    <addaction name="actionGraph_Perturbation"/>
+    <addaction name="actionPrimitives_perturbation"/>
+   </widget>
+   <widget class="QMenu" name="menuSimplification">
+    <property name="title">
+     <string>Simplification</string>
+    </property>
+    <addaction name="actionEdge_collapse"/>
+    <addaction name="actionPrompt_contraction_params"/>
+    <addaction name="separator"/>
+    <addaction name="actionProject_on_primitives"/>
+   </widget>
+   <widget class="QMenu" name="menuPoint_set_operations">
+    <property name="title">
+     <string>Triangulation</string>
+    </property>
+    <addaction name="actionNoise"/>
+    <addaction name="actionNormalise"/>
+    <addaction name="actionPrompt_complex"/>
+    <addaction name="actionMesh_stats"/>
+    <addaction name="actionKeep_only_one_CC"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuRender"/>
+   <addaction name="menuDetection"/>
+   <addaction name="menuSimplification"/>
+   <addaction name="menuPoint_set_operations"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_New_File">
+   <property name="text">
+    <string>Load mesh</string>
+   </property>
+  </action>
+  <action name="actionLoad_Additional_File">
+   <property name="text">
+    <string>Load Additional File</string>
+   </property>
+  </action>
+  <action name="actionLoad_Points">
+   <property name="text">
+    <string>Load Points</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionVertices">
+   <property name="text">
+    <string>Vertices</string>
+   </property>
+  </action>
+  <action name="actionEdges">
+   <property name="text">
+    <string>Edges</string>
+   </property>
+  </action>
+  <action name="actionTriangles">
+   <property name="text">
+    <string>Triangles</string>
+   </property>
+  </action>
+  <action name="actionPrimitives">
+   <property name="text">
+    <string>Primitives</string>
+   </property>
+  </action>
+  <action name="actionEdge_collapse">
+   <property name="text">
+    <string>Edge collapse</string>
+   </property>
+  </action>
+  <action name="actionPlanes">
+   <property name="text">
+    <string>Primitives detection</string>
+   </property>
+  </action>
+  <action name="actionPlanar_primitives">
+   <property name="text">
+    <string>Planar primitives</string>
+   </property>
+  </action>
+  <action name="actionProject_on_primitives">
+   <property name="text">
+    <string>Project on primitives</string>
+   </property>
+  </action>
+  <action name="actionLight">
+   <property name="text">
+    <string>Light</string>
+   </property>
+  </action>
+  <action name="actionSet_cost_placement_strategy">
+   <property name="text">
+    <string>Set cost/placement strategy</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save mesh</string>
+   </property>
+  </action>
+  <action name="actionNoise">
+   <property name="text">
+    <string>Uniform noise</string>
+   </property>
+  </action>
+  <action name="actionPromptPrimitives">
+   <property name="text">
+    <string>Prompt primitives</string>
+   </property>
+  </action>
+  <action name="actionPrompt_complex">
+   <property name="text">
+    <string>Prompt complex</string>
+   </property>
+  </action>
+  <action name="actionBorder_edges">
+   <property name="text">
+    <string>Border edges</string>
+   </property>
+  </action>
+  <action name="actionLoad_segmentation">
+   <property name="text">
+    <string>Load segmentation</string>
+   </property>
+  </action>
+  <action name="actionMesh_stats">
+   <property name="text">
+    <string>Mesh stats</string>
+   </property>
+  </action>
+  <action name="actionKeep_only_one_CC">
+   <property name="text">
+    <string>Keep only one CC</string>
+   </property>
+  </action>
+  <action name="actionSize_vertices_edges">
+   <property name="text">
+    <string>Size vertices/edges</string>
+   </property>
+  </action>
+  <action name="actionMore">
+   <property name="text">
+    <string>More</string>
+   </property>
+  </action>
+  <action name="actionGraph_Perturbation">
+   <property name="text">
+    <string>Graph perturbation</string>
+   </property>
+  </action>
+  <action name="actionPrimitives_perturbation">
+   <property name="text">
+    <string>Primitives perturbation</string>
+   </property>
+  </action>
+  <action name="actionPrimitives_expansion">
+   <property name="text">
+    <string>Primitives expansion</string>
+   </property>
+  </action>
+  <action name="actionGraph_detection">
+   <property name="text">
+    <string>Graph detection</string>
+   </property>
+  </action>
+  <action name="actionPrompt_detection_params">
+   <property name="text">
+    <string>Prompt detection params</string>
+   </property>
+  </action>
+  <action name="actionSave_segmentation">
+   <property name="text">
+    <string>Save segmentation</string>
+   </property>
+  </action>
+  <action name="actionLoad_segmenetation">
+   <property name="text">
+    <string>Load segmentation</string>
+   </property>
+  </action>
+  <action name="actionPrompt_contraction_params">
+   <property name="text">
+    <string>Prompt contraction params</string>
+   </property>
+  </action>
+  <action name="actionNormalise">
+   <property name="text">
+    <string>Normalise</string>
+   </property>
+  </action>  
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Buffered_viewer</class>
+   <extends>QWidget</extends>
+   <header>Buffered_viewer.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

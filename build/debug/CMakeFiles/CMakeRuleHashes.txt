@@ -1,0 +1,12 @@
+# Hashes of file build rules.
+36896254d749a76afd738dd5589ccca0 ../../src/interface/ui_MainWindow.h
+ba34a39abb5dea8e9d7ba2b5dd7a3f68 ../../src/interface/ui_Menu_detect_primitive.h
+3d8f8b6bd019c92680c9225530222788 ../../src/interface/ui_Menu_edge_collapse.h
+22eabfb046e917b06197a9e938b5e29f ../../src/interface/ui_Menu_view_param.h
+9e5d31bff86c4b500c66ee436013ce49 CMakeFiles/CGAL_Qt5_moc_and_resources_autogen
+08bba891d5157f38eaf6e733dd323e78 CMakeFiles/Urban_simplification_autogen
+ca49f430c2698ffd03fbea588e3635eb qrc_CGAL.cpp
+212fd7dcf337d133d767c6ff0daf8a7f qrc_File.cpp
+eab4475b827d419da1cab5913f53951f qrc_Input.cpp
+4e304af9a3939aabe937d97bfdf9f0f0 qrc_Triangulation_2.cpp
+aba64835cbeef9e7e9710c42475697b3 ui_ImageInterface.h
